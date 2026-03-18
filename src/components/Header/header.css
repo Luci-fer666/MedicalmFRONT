@@ -1,0 +1,89 @@
+.header {
+  padding: 12px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  height: 100px;
+}
+
+/* IZQUIERDA */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(3, 83, 94);
+  letter-spacing: 0.5px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link {
+  color: rgb(3, 83, 94);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Línea animada */
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: rgb(3, 83, 94);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+/* BOTÓN LOGIN */
+.login-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgb(3, 83, 94);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.login-btn::after {
+  display: none;
+}
+
+.login-btn:hover {
+  background: rgb(2, 60, 68);
+  transform: translateY(-1px);
+}
