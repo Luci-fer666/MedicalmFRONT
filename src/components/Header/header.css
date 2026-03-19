@@ -87,3 +87,70 @@
   background: rgb(2, 60, 68);
   transform: translateY(-1px);
 }
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .header {
+    height: auto;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .header-left {
+    justify-content: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* Móviles chicos */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+
+  .login-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

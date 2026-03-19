@@ -44,3 +44,61 @@ footer {
 .links a:hover {
   color: #1f5c5d;
 }
+
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .links nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .avalado img {
+    width: 120px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .avalado {
+    font-size: 13px;
+  }
+
+  .avalado img {
+    width: 100px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+
+  .links nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* Móviles chicos */
+@media (max-width: 480px) {
+  .links nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .links a {
+    font-size: 0.9rem;
+  }
+
+  .avalado {
+    font-size: 12px;
+  }
+}
