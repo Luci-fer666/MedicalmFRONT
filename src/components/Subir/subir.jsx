@@ -70,7 +70,7 @@ function Subir() {
       formData.append("pdf", file);
       formData.append("edad", edad);
 
-      const res = await fetch("http://localhost:4000/api/mis-analisis/upload", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/mis-analisis/upload`, {
         method: "POST",
         body: formData,
       });
